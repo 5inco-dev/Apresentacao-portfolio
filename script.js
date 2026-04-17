@@ -1,6 +1,32 @@
 const menuLinks = document.querySelectorAll('.menu a');
 const sections = document.querySelectorAll('main section');
 const observedSections = document.querySelectorAll('main section[id]');
+const menuToggle = document.querySelector('.menu-toggle');
+const siteHeader = document.querySelector('.site-header');
+
+if (menuToggle && siteHeader) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = siteHeader.classList.toggle('menu-open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+  });
+
+  menuLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      siteHeader.classList.remove('menu-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Abrir menu');
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 700) {
+      siteHeader.classList.remove('menu-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Abrir menu');
+    }
+  });
+}
 
 // Reveal on scroll: prepara secoes com atraso curto para entrada progressiva.
 sections.forEach((section, index) => {

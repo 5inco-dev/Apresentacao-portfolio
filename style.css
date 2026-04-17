@@ -481,21 +481,21 @@ article,
   background: #121a25;
 }
 
-.terminal-top span {
+.terminal-top .terminal-dot {
   width: 0.62rem;
   height: 0.62rem;
   border-radius: 50%;
 }
 
-.terminal-top span:nth-child(1) {
+.terminal-top .terminal-dot:nth-child(1) {
   background: #f87171;
 }
 
-.terminal-top span:nth-child(2) {
+.terminal-top .terminal-dot:nth-child(2) {
   background: #facc15;
 }
 
-.terminal-top span:nth-child(3) {
+.terminal-top .terminal-dot:nth-child(3) {
   background: #4ade80;
 }
 

@@ -476,6 +476,11 @@ article,
   line-height: 1.5;
 }
 
+.check-list li > span:last-child {
+  flex: 1;
+  min-width: 0;
+}
+
 .check-icon {
   flex: 0 0 auto;
   display: inline-flex;
@@ -789,7 +794,6 @@ code {
 
   .section-title p,
   .bento-card p,
-  .deep-dive,
   .cta-final p {
     font-size: 0.95rem;
   }
@@ -798,7 +802,10 @@ code {
     grid-template-columns: 1fr;
   }
 
-  .deep-dive,
+  .deep-dive {
+    padding: 1.15rem 1rem 1rem;
+  }
+
   .cta-final {
     padding: 1rem;
   }
@@ -874,7 +881,9 @@ code {
   }
 
   .ods-badge {
-    right: 0.7rem;
+    position: static;
+    margin-bottom: 0.55rem;
+    align-self: flex-start;
     font-size: 0.67rem;
     padding: 0.2rem 0.5rem;
   }

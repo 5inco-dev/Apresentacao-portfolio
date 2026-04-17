@@ -1,19 +1,19 @@
 # Tecnologia, IA e ODS 4
 
-Landing page de apresentacao para palestra universitaria sobre tecnologia, inteligencia artificial e ODS 4, com foco em educacao de qualidade, inclusao e impacto social.
+Landing page de apresentação para palestra universitária sobre tecnologia, inteligência artificial e ODS 4, com foco em educação de qualidade, inclusão e impacto social.
 
-## Visao Geral
+## Visão Geral
 
-Este projeto foi desenvolvido como uma proposta de palestra com visual moderno em dark mode, Bento Grid e narrativa voltada ao ambiente academico.
+Este projeto foi desenvolvido como uma proposta de palestra com visual moderno em dark mode, Bento Grid e narrativa voltada ao ambiente acadêmico.
 
 ## Recursos Principais
 
 - Hero section com chamada direta para a proposta.
-- Bento Grid com areas tech e faixas salariais.
-- Secao dedicada a IA e ODS 4.
-- Bloco tecnico com snippet em Java e SQL.
-- CTA final para PDF e repositorio GitHub.
-- Animacao de reveal on scroll com Intersection Observer.
+- Bento Grid com áreas tech e faixas salariais.
+- Seção dedicada a IA e ODS 4.
+- Bloco técnico com snippet em Java e SQL.
+- CTA final para PDF e repositório GitHub.
+- Animação de reveal on scroll com Intersection Observer.
 
 ## Tecnologias
 
@@ -24,27 +24,27 @@ Este projeto foi desenvolvido como uma proposta de palestra com visual moderno e
 
 ## Estrutura
 
-- `index.html` - conteudo principal da landing page.
+- `index.html` - conteúdo principal da landing page.
 - `style.css` - identidade visual e responsividade.
-- `script.js` - animacao de scroll e comportamento do menu.
+- `script.js` - animação de scroll e comportamento do menu.
 
 ## Como Executar
 
 1. Abra a pasta do projeto no VS Code.
 2. Abra o arquivo `index.html` no navegador.
-3. Para editar, ajuste os arquivos HTML, CSS e JS conforme necessario.
+3. Para editar, ajuste os arquivos HTML, CSS e JS conforme necessário.
 
-## Publicacao no GitHub Pages
+## Publicação no GitHub Pages
 
-1. No repositorio do GitHub, abra `Settings`.
+1. No repositório do GitHub, abra `Settings`.
 2. Em `Pages`, selecione `Deploy from a branch`.
 3. Escolha a branch `main` e a pasta `/docs`.
-4. Salve e aguarde a geracao do link publico.
+4. Salve e aguarde a geração do link público.
 
-## Observacao
+## Observação
 
-Esta versao usa apenas a pasta `docs` como origem do GitHub Pages, para manter a publicacao simples e sem duplicidade de configuracao.
+Esta versão usa apenas a pasta `docs` como origem do GitHub Pages, para manter a publicação simples e sem duplicidade de configuração.
 
 ## Autor
 
-Desenvolvido por Junior Silva | Academico de Analise e Desenvolvimento de Sistemas
+Desenvolvido por Junior Silva | Acadêmico de Análise e Desenvolvimento de Sistemas

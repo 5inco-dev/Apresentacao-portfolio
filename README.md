@@ -47,4 +47,4 @@ Esta versão usa apenas a pasta `docs` como origem do GitHub Pages, para manter 
 
 ## Autor
 
-Desenvolvido por Junior Silva | Acadêmico de Análise e Desenvolvimento de Sistemas
+Desenvolvido por Adilson Junior | Acadêmico de Análise e Desenvolvimento de Sistemas

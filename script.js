@@ -3,6 +3,23 @@ const sections = document.querySelectorAll('main section');
 const observedSections = document.querySelectorAll('main section[id]');
 const menuToggle = document.querySelector('.menu-toggle');
 const siteHeader = document.querySelector('.site-header');
+const proposalTrigger = document.querySelector('#open-proposta');
+const proposalSection = document.querySelector('#proposta-detalhada');
+
+if (proposalTrigger && proposalSection) {
+  document.body.classList.add('js-ready');
+  proposalSection.classList.remove('is-open');
+
+  proposalTrigger.addEventListener('click', (event) => {
+    event.preventDefault();
+    const isOpen = proposalSection.classList.toggle('is-open');
+    proposalTrigger.setAttribute('aria-expanded', String(isOpen));
+
+    if (isOpen) {
+      proposalSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+}
 
 if (menuToggle && siteHeader) {
   siteHeader.classList.add('menu-collapsible');

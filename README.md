@@ -36,10 +36,15 @@ Este projeto foi desenvolvido como uma proposta de palestra com visual moderno e
 
 ## Publicacao no GitHub Pages
 
-1. Envie o projeto para o GitHub.
-2. No repositorio, abra `Settings`.
-3. Em `Pages`, selecione a branch `main` e a pasta raiz.
-4. Salve e aguarde a geracao do link publico.
+1. No repositorio do GitHub, abra `Settings`.
+2. Em `Pages`, selecione `GitHub Actions` como fonte.
+3. Faça push na branch `main`.
+4. Aguarde a execucao do workflow `Deploy GitHub Pages`.
+5. O link publico sera exibido na aba `Actions` e em `Settings > Pages`.
+
+## Deploy Automatizado
+
+O projeto inclui um workflow em `.github/workflows/pages.yml` para publicar o site automaticamente sempre que houver push na branch `main`.
 
 ## Autor
 

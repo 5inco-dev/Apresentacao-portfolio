@@ -19,6 +19,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  max-width: 100%;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -174,6 +179,16 @@ main {
   display: grid;
   gap: 2.2rem;
   padding-bottom: 3rem;
+}
+
+main,
+section,
+article,
+.bento-grid,
+.bento-card,
+.deep-dive,
+.cta-final {
+  min-width: 0;
 }
 
 .section-title {
@@ -339,6 +354,7 @@ pre {
   margin: 0;
   padding: 1rem;
   overflow-x: auto;
+  max-width: 100%;
 }
 
 code {
@@ -403,10 +419,7 @@ code {
   }
 
   .menu-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
+    display: none;
   }
 
   .site-header nav {
@@ -414,14 +427,25 @@ code {
   }
 
   .menu {
-    display: none;
+    display: flex;
     width: 100%;
     flex-direction: column;
     gap: 0.35rem;
     padding: 0.3rem 0 0.15rem;
   }
 
-  .site-header.menu-open .menu {
+  .site-header.menu-collapsible .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .site-header.menu-collapsible .menu {
+    display: none;
+  }
+
+  .site-header.menu-collapsible.menu-open .menu {
     display: flex;
   }
 

@@ -7,7 +7,7 @@
   <meta name="description" content="Landing page de proposta de palestra universitária sobre tecnologia, IA e ODS 4." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -170,19 +170,21 @@
         <div class="terminal-top">
           <span></span><span></span><span></span>
           <p>student-analytics.java</p>
+          <span class="code-badge">Java + SQL Moderno</span>
         </div>
-        <pre><code>public record StudentProgress(Long studentId, double score, int attendance) {}
+        <pre><code><span class="tok-key">public</span> <span class="tok-key">record</span> <span class="tok-type">StudentProgress</span>(<span class="tok-type">Long</span> studentId, <span class="tok-type">double</span> score, <span class="tok-type">int</span> attendance) {}
 
-String query = """
-  SELECT student_id, AVG(score) AS avg_score, SUM(attendance) AS attendance_days
-  FROM evaluations
-  WHERE semester = ?
-  GROUP BY student_id
-""";
+<span class="tok-type">String</span> query = <span class="tok-str">"""</span>
+  <span class="tok-sql-key">SELECT</span> <span class="tok-var">student_id</span>, <span class="tok-sql-key">AVG</span>(<span class="tok-var">score</span>) <span class="tok-sql-key">AS</span> <span class="tok-var">avg_score</span>, <span class="tok-sql-key">SUM</span>(<span class="tok-var">attendance</span>) <span class="tok-sql-key">AS</span> <span class="tok-var">attendance_days</span>
+  <span class="tok-sql-key">FROM</span> <span class="tok-var">evaluations</span>
+  <span class="tok-sql-key">WHERE</span> <span class="tok-var">semester</span> = <span class="tok-op">?</span>
+  <span class="tok-sql-key">GROUP BY</span> <span class="tok-var">student_id</span>
+<span class="tok-str">"""</span>;
 
-boolean eligibleForMentoring(StudentProgress p) {
-  return p.score() &lt; 7.0 || p.attendance() &lt; 75;
+<span class="tok-key">boolean</span> <span class="tok-fn">eligibleForMentoring</span>(<span class="tok-type">StudentProgress</span> p) {
+  <span class="tok-key">return</span> p.score() <span class="tok-op">&lt;</span> <span class="tok-num">7.0</span> <span class="tok-op">||</span> p.attendance() <span class="tok-op">&lt;</span> <span class="tok-num">75</span>;
 }</code></pre>
+        <p class="code-legend">Aplicação prática: Algoritmo de monitoramento preventivo para suporte ao aluno (ODS 4.1).</p>
       </article>
     </section>
 

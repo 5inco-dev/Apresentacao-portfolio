@@ -28,6 +28,7 @@ body {
     radial-gradient(700px 400px at -10% 20%, rgba(197, 25, 61, 0.14), transparent 55%),
     var(--bg);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .page-glow {
@@ -385,12 +386,39 @@ code {
     gap: 0.6rem;
   }
 
+  .brand {
+    font-size: 0.95rem;
+  }
+
   .menu {
-    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.5rem 0.8rem;
+  }
+
+  .menu a {
+    font-size: 0.84rem;
+  }
+
+  .hero {
+    padding: 3.6rem 0 1.4rem;
   }
 
   h1 {
     font-size: clamp(1.72rem, 10vw, 2.7rem);
+    max-width: 12ch;
+  }
+
+  .hero-subtitle {
+    font-size: 0.98rem;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
   }
 
   .bento-card,
@@ -399,7 +427,81 @@ code {
     grid-column: span 12;
   }
 
+  .bento-grid {
+    gap: 0.7rem;
+  }
+
+  .bento-card {
+    padding: 0.9rem;
+  }
+
+  .section-title h2 {
+    font-size: clamp(1.15rem, 6vw, 1.55rem);
+  }
+
+  .section-title p,
+  .bento-card p,
+  .deep-dive,
+  .cta-final p {
+    font-size: 0.95rem;
+  }
+
+  .deep-dive,
+  .cta-final {
+    padding: 1rem;
+  }
+
+  .terminal-top {
+    padding: 0.5rem 0.65rem;
+  }
+
+  .terminal-top p {
+    font-size: 0.76rem;
+    margin-left: 0.25rem;
+  }
+
+  pre {
+    padding: 0.85rem;
+  }
+
+  code {
+    font-size: 0.8rem;
+  }
+
   .container {
     width: min(1140px, calc(100% - 1.2rem));
+  }
+}
+
+@media (max-width: 420px) {
+  .header-inner {
+    align-items: flex-start;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .eyebrow {
+    font-size: 0.75rem;
+  }
+
+  .hero {
+    padding-top: 3rem;
+  }
+
+  .card-icon,
+  .salary-badge {
+    font-size: 0.75rem;
+  }
+
+  .check-list li {
+    padding-left: 1.6rem;
+  }
+
+  .check-list li::before {
+    width: 1rem;
+    height: 1rem;
   }
 }

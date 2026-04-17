@@ -41,11 +41,9 @@ Este projeto foi desenvolvido como uma proposta de palestra com visual moderno e
 3. Escolha a branch `main` e a pasta `/docs`.
 4. Salve e aguarde a geracao do link publico.
 
-Se preferir manter o deploy automatizado, selecione `GitHub Actions` como fonte. Nesse caso, o workflow `.github/workflows/pages.yml` publica a raiz do projeto automaticamente após o push na branch `main`.
+## Observacao
 
-## Deploy Automatizado
-
-O projeto inclui um workflow em `.github/workflows/pages.yml` para publicar o site automaticamente sempre que houver push na branch `main`.
+Esta versao usa apenas a pasta `docs` como origem do GitHub Pages, para manter a publicacao simples e sem duplicidade de configuracao.
 
 ## Autor
 
